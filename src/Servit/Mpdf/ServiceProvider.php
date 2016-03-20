@@ -30,8 +30,8 @@ class ServiceProvider extends BaseServiceProvider {
 				$app['mpdf.pdf'] = $app->share(function($app) use($cfg){
 					$mpdf = new \mPDF( $cfg[0],$cfg[1],$cfg[2],$cfg[3],$cfg[4],$cfg[5],$cfg[6],$cfg[7],$cfg[8],$cfg[9],$cfg[10] );
 					$mpdf->SetProtection(array('print'));
-					$mpdf->SetTitle("TOMATO POS - Invoice");
-					$mpdf->SetAuthor("Thongchai Lim");
+					$mpdf->SetTitle("");
+					$mpdf->SetAuthor("");
 					$mpdf->SetWatermarkText("");
 					$mpdf->showWatermarkText = true;
 					$mpdf->watermark_font = 'DejaVuSansCondensed';
@@ -42,8 +42,8 @@ class ServiceProvider extends BaseServiceProvider {
 			} else {
 		    			$mpdf = new \mPDF('th','A4','','',10,10,10,10,10,5);
 					$mpdf->SetProtection(array('print'));
-					$mpdf->SetTitle("TOMATO POS - Invoice");
-					$mpdf->SetAuthor("Thongchai Lim");
+					$mpdf->SetTitle("");
+					$mpdf->SetAuthor("");
 					$mpdf->SetWatermarkText("");
 					$mpdf->showWatermarkText = true;
 					$mpdf->watermark_font = 'DejaVuSansCondensed';
