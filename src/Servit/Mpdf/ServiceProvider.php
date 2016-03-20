@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace Servit\Mpdf;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
@@ -32,7 +32,7 @@ class ServiceProvider extends BaseServiceProvider {
 					$mpdf->SetProtection(array('print'));
 					$mpdf->SetTitle("TOMATO POS - Invoice");
 					$mpdf->SetAuthor("Thongchai Lim");
-					$mpdf->SetWatermarkText("Paid");
+					$mpdf->SetWatermarkText("");
 					$mpdf->showWatermarkText = true;
 					$mpdf->watermark_font = 'DejaVuSansCondensed';
 					$mpdf->watermarkTextAlpha = 0.1;
@@ -44,7 +44,7 @@ class ServiceProvider extends BaseServiceProvider {
 					$mpdf->SetProtection(array('print'));
 					$mpdf->SetTitle("TOMATO POS - Invoice");
 					$mpdf->SetAuthor("Thongchai Lim");
-					$mpdf->SetWatermarkText("Paid");
+					$mpdf->SetWatermarkText("");
 					$mpdf->showWatermarkText = true;
 					$mpdf->watermark_font = 'DejaVuSansCondensed';
 					$mpdf->watermarkTextAlpha = 0.1;
