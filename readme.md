@@ -7,13 +7,13 @@ In development.
 ## Instalation
 Add:
 ```
-"servit/l5mpdf": "dev-master@dev",
+"maspriyono/l5mpdf": "dev-master@dev",
 ```
 To your `composer.json`
 
 or Run:
 ```
-composer require servit/l5mpdf
+composer require maspriyono/l5mpdf
 ```
 
 Then add:
